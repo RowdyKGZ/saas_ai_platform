@@ -10,14 +10,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Genius",
   description: "Ai platform",
-  icons: {
-    icon: [
-      {
-        url: "/logo.png",
-        href: "/logo.png",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -28,6 +20,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+        <link rel="icon" href="/logo.png" />
         <body className={inter.className} suppressHydrationWarning>
           {children}
         </body>
